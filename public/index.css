@@ -1,0 +1,100 @@
+html {
+  height: 100%;
+  margin: 0;
+  background: rgb(99,40,129);
+}
+
+body {
+  background: rgb(99,40,129);
+  background: linear-gradient(174deg, rgba(99,40,129,1) 11%, rgba(68,68,136,1) 57%, rgba(99,40,129,1) 97%);
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+#title {
+  font-size: 100px;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  display: flex;
+  color: white;
+  font-family: Helvetica, sans-serif;
+}
+
+/* Basic styling for the container */
+#todo-container {
+  width: 500px;
+  background-color: lightcyan;
+  padding: 25px 50px 100px 50px;
+  border-radius: 16px;
+  font-family: Helvetica, serif;
+  display: flex;
+  flex-direction: column;
+}
+
+#todo-container h2 {
+  display: flex;
+  margin: 0 0 20px 0;
+}
+
+/* Styling for the input and button */
+#input-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* Styling for the input field */
+#todo-input {
+  flex-grow: 1fr;
+  margin-right: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Styling for the add button */
+#add-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
+
+#add-button:hover {
+  background-color: #45a049;
+}
+
+/* Basic styling for the list */
+#todo-list {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+}
+
+/* Styling for the list items */
+#todo-list li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: white;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* Styling for the delete button */
+.delete-button {
+  border: none;
+  color: red;
+  cursor: pointer;
+  background-color: transparent;
+  font-size: 16px;
+  padding: 0;
+}

@@ -4,50 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Todo List</title>
-  <link rel="stylesheet" href="styles.css">
+  <!-- <link rel="stylesheet" href="styles.css"> -->
+   <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
-<body>
-  <!-- bg-custom-gradient -->
-  <header class="flex flex-col m-0">
-    <h1 class="">Todo List</h1>
-    <form id="new-task-form" class="flex">
-      <input 
-        type="text"
-        placeholder="What to do..."
-        id="new-task-input"
-        class="m-0 border border-black" />
-      <input
-      type="submit"
-      value="Add"
-      id="new-task-submit"
-      class="m-0 border border-black" />
-
-    </form>
-  </header>
-
-  <main class="pt-10">
-    <section>
-      <h2 class="">Tasks</h2>
-      <div id="tasks">
-        <div id="task" class="flex flex-row">
-          <div id="context" class=" flow flex-row">
-            <input
-            type="text"
-            id="text"
-            value="My Task"
-            readonly
-            class="flex flex-row border border-black" 
-            />
-          </div>
-          <div id="actions">
-            <button id="delete" class=" flex flex-row border border-black">Delete</button>
-            
-          </div>
-        </div>
+  <body>
+    <div id="title">
+      What needs to be done today...
+    </div>
+    <div id="todo-container">
+      <h1>List</h1>
+      <div class="input-container">
+        <input type="text" id="todo-input" placeholder="Add a new task">
+        <button id="add-button">Add</button>
       </div>
-    </section>
-  </main>
+      <ul id="todo-list"></ul>
+  </div>
 
-  <script src="../src/script.js"></script>
-</body>
+      <script src="../src/script.js"></script>
+  </body>
 </html>
